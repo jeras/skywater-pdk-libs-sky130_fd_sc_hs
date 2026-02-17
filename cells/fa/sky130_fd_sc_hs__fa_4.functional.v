@@ -34,8 +34,6 @@
 
 `celldefine
 module sky130_fd_sc_hs__fa_4 (
-    VPWR,
-    VGND,
     COUT,
     SUM ,
     A   ,
@@ -44,13 +42,15 @@ module sky130_fd_sc_hs__fa_4 (
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output COUT;
     output SUM ;
     input  A   ;
     input  B   ;
     input  CIN ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire              or0_out              ;

@@ -36,7 +36,9 @@ module sky130_fd_sc_hs__dlclkp_4 (
     GATE,
     CLK ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output GCLK;
@@ -44,6 +46,8 @@ module sky130_fd_sc_hs__dlclkp_4 (
     input  CLK ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

@@ -36,7 +36,9 @@ module sky130_fd_sc_hs__dlxtn_4 (
     D     ,
     GATE_N,
     VPWR  ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Q     ;
@@ -44,6 +46,8 @@ module sky130_fd_sc_hs__dlxtn_4 (
     input  GATE_N;
     input  VPWR  ;
     input  VGND  ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

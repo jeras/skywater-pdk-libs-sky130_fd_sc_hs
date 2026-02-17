@@ -36,7 +36,9 @@ module sky130_fd_sc_hs__fill ();
 
     // Voltage supply signals
     supply1 VPWR;
-    supply0 VGND;
+    VGND,
+    VPB ,
+    VNB
     supply1 VPB ;
     supply0 VNB ;
 

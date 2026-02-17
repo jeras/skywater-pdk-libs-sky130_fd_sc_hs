@@ -34,17 +34,17 @@
 
 `celldefine
 module sky130_fd_sc_hs__bufinv_8 (
-    VPWR,
-    VGND,
     Y   ,
     A
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Y   ;
     input  A   ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   not0_out_Y        ;

@@ -30,16 +30,14 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_df_p_r_no_pg/sky130_fd_sc_hs__u_df_p_r_no_pg.v"
+`include "../../models/udp_dff_pr_pp_pg_n/sky130_fd_sc_hs__udp_dff_pr_pp_pg_n.v"
 
 `celldefine
 module sky130_fd_sc_hs__dfrtp_1 (
     RESET_B,
     CLK    ,
     D      ,
-    Q      ,
-    VPWR   ,
-    VGND
+    Q
 );
 
     // Module ports
@@ -47,8 +45,10 @@ module sky130_fd_sc_hs__dfrtp_1 (
     input  CLK    ;
     input  D      ;
     output Q      ;
-    input  VPWR   ;
-    input  VGND   ;
+
+    // Module supplies
+    supply1  VPWR   ;
+    supply0  VGND   ;
 
     // Local signals
     wire buf_Q          ;
@@ -63,7 +63,7 @@ module sky130_fd_sc_hs__dfrtp_1 (
 
     //                              Name             Output  Other arguments
     not                             not0            (RESET , RESET_B_delayed                                    );
-    sky130_fd_sc_hs__u_df_p_r_no_pg u_df_p_r_no_pg0 (buf_Q , D_delayed, CLK_delayed, RESET, notifier, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dff$PR_pp$PG$N u_df_p_r_no_pg0 (buf_Q , D_delayed, CLK_delayed, RESET, notifier, VPWR, VGND);
     assign awake = ( VPWR === 1'b1 );
     assign cond0 = ( awake && ( RESET_B_delayed === 1'b1 ) );
     assign cond1 = ( awake && ( RESET_B === 1'b1 ) );

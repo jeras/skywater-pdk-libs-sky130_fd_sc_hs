@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__edfxtp_1 (
     D   ,
     DE  ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Q   ;
@@ -47,6 +49,8 @@ module sky130_fd_sc_hs__edfxtp_1 (
     input  DE  ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

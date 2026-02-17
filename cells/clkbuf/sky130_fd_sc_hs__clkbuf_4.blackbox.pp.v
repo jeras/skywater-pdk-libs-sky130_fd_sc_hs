@@ -35,13 +35,17 @@ module sky130_fd_sc_hs__clkbuf_4 (
     X   ,
     A   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output X   ;
     input  A   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

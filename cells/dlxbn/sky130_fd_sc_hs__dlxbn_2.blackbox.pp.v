@@ -37,7 +37,9 @@ module sky130_fd_sc_hs__dlxbn_2 (
     D     ,
     GATE_N,
     VPWR  ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Q     ;
@@ -46,6 +48,8 @@ module sky130_fd_sc_hs__dlxbn_2 (
     input  GATE_N;
     input  VPWR  ;
     input  VGND  ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

@@ -63,4 +63,6 @@ module top();
 endmodule
 
 `default_nettype wire
-`endif  // SKY130_FD_SC_HS__TAPVPWRVGND_TB_V
+    VGND,
+    VPB ,
+    VNB

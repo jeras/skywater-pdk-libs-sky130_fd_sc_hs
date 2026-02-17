@@ -36,17 +36,17 @@
 module sky130_fd_sc_hs__nor2_2 (
     Y   ,
     A   ,
-    B   ,
-    VPWR,
-    VGND
+    B
 );
 
     // Module ports
     output Y   ;
     input  A   ;
     input  B   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   nor0_out_Y        ;

@@ -30,23 +30,23 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_dl_p_pg/sky130_fd_sc_hs__u_dl_p_pg.v"
+`include "../../models/udp_dlatch_p_pp_pg/sky130_fd_sc_hs__udp_dlatch_p_pp_pg.v"
 
 `celldefine
 module sky130_fd_sc_hs__dlclkp_1 (
-    VPWR,
-    VGND,
     GCLK,
     GATE,
     CLK
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output GCLK;
     input  GATE;
     input  CLK ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire m0          ;
@@ -56,7 +56,7 @@ module sky130_fd_sc_hs__dlclkp_1 (
 
     //                         Name        Output  Other arguments
     not                        not0       (clkn  , CLK                   );
-    sky130_fd_sc_hs__u_dl_p_pg u_dl_p_pg0 (m0    , GATE, clkn, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dlatch$P_pp$PG u_dl_p_pg0 (m0    , GATE, clkn, VPWR, VGND);
     and                        and0       (GCLK  , m0, CLK               );
 
 endmodule

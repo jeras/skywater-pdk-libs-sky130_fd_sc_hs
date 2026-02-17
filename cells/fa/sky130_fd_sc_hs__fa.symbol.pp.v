@@ -42,7 +42,9 @@ module sky130_fd_sc_hs__fa (
 
     //# {{power|Power}}
     input  VPWR,
-    input  VGND
+    input  VGND,
+    input  VPB ,
+    input  VNB
 );
 endmodule
 

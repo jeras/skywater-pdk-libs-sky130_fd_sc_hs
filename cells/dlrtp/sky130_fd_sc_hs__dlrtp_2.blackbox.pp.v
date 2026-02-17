@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__dlrtp_2 (
     GATE   ,
     Q      ,
     VPWR   ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  RESET_B;
@@ -47,6 +49,8 @@ module sky130_fd_sc_hs__dlrtp_2 (
     output Q      ;
     input  VPWR   ;
     input  VGND   ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

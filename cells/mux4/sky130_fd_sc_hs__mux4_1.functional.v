@@ -31,12 +31,10 @@
 
 // Import sub cells.
 `include "../../models/udp_pwrgood_pp_pg/sky130_fd_sc_hs__udp_pwrgood_pp_pg.v"
-`include "../u_mux_4/sky130_fd_sc_hs__u_mux_4.v"
+`include "../../models/udp_mux_4to2/sky130_fd_sc_hs__udp_mux_4to2.v"
 
 `celldefine
 module sky130_fd_sc_hs__mux4_1 (
-    VPWR,
-    VGND,
     X   ,
     A0  ,
     A1  ,
@@ -47,8 +45,6 @@ module sky130_fd_sc_hs__mux4_1 (
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output X   ;
     input  A0  ;
     input  A1  ;
@@ -56,6 +52,10 @@ module sky130_fd_sc_hs__mux4_1 (
     input  A3  ;
     input  S0  ;
     input  S1  ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire    u_mux_40_out_X    ;

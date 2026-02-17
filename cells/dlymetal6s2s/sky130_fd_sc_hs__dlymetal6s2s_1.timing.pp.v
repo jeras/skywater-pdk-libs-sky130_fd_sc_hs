@@ -35,17 +35,21 @@
 
 `celldefine
 module sky130_fd_sc_hs__dlymetal6s2s_1 (
+    X   ,
+    A,
     VPWR,
     VGND,
-    X   ,
-    A
+    VPB ,
+    VNB
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output X   ;
     input  A   ;
+    input  VPWR;
+    input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire   buf0_out_X        ;

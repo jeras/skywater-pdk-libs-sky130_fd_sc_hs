@@ -36,13 +36,17 @@ module sky130_fd_sc_hs__clkdlyinv3sd2_1 (
     Y   ,
     A   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Y   ;
     input  A   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

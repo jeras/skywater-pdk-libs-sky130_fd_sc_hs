@@ -36,17 +36,17 @@
 module sky130_fd_sc_hs__einvn_2 (
     A   ,
     TE_B,
-    Z   ,
-    VPWR,
-    VGND
+    Z
 );
 
     // Module ports
     input  A   ;
     input  TE_B;
     output Z   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire udp_pwrgood_pp$PG0_out_A  ;

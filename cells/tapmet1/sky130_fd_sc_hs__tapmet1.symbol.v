@@ -36,7 +36,9 @@ module sky130_fd_sc_hs__tapmet1 ();
 
     // Voltage supply signals
     supply1 VPWR;
-    supply0 VGND;
+    VGND,
+    VPB ,
+    VNB
 
 endmodule
 

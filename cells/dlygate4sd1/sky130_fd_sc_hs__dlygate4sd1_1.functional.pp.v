@@ -37,7 +37,9 @@ module sky130_fd_sc_hs__dlygate4sd1_1 (
     X   ,
     A   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -45,6 +47,8 @@ module sky130_fd_sc_hs__dlygate4sd1_1 (
     input  A   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire   buf0_out_X        ;

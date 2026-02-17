@@ -31,13 +31,11 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_mux_2/sky130_fd_sc_hs__u_mux_2.v"
-`include "../u_df_p_s_pg/sky130_fd_sc_hs__u_df_p_s_pg.v"
+`include "../../models/u_mux_2/sky130_fd_sc_hs__u_mux_2.v"
+`include "../../models/udp_dff_ps_pp_pg/sky130_fd_sc_hs__udp_dff_ps_pp_pg.v"
 
 `celldefine
 module sky130_fd_sc_hs__sdfstp_1 (
-    VPWR ,
-    VGND ,
     Q    ,
     CLK  ,
     D    ,
@@ -47,14 +45,16 @@ module sky130_fd_sc_hs__sdfstp_1 (
 );
 
     // Module ports
-    input  VPWR ;
-    input  VGND ;
     output Q    ;
     input  CLK  ;
     input  D    ;
     input  SCD  ;
     input  SCE  ;
     input  SET_B;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire buf_Q  ;
@@ -63,8 +63,8 @@ module sky130_fd_sc_hs__sdfstp_1 (
 
     //                           Delay       Name          Output   Other arguments
     not                                      not0         (SET    , SET_B                        );
-    sky130_fd_sc_hs__u_mux_2_1               u_mux_20     (mux_out, D, SCD, SCE                  );
-    sky130_fd_sc_hs__u_df_p_s_pg `UNIT_DELAY u_df_p_s_pg0 (buf_Q  , mux_out, CLK, SET, VPWR, VGND);
+    sky130_fd_sc_hs__udp_mux_2to1               u_mux_20     (mux_out, D, SCD, SCE                  );
+    sky130_fd_sc_hs__udp_dff$PS_pp$PG `UNIT_DELAY u_df_p_s_pg0 (buf_Q  , mux_out, CLK, SET, VPWR, VGND);
     buf                                      buf0         (Q      , buf_Q                        );
 
 endmodule

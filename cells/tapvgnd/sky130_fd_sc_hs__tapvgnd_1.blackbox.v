@@ -35,9 +35,13 @@
 module sky130_fd_sc_hs__tapvgnd_1 ();
     // Voltage supply signals
     supply1 VPWR;
-    supply0 VGND;
+    VGND,
+    VPB ,
+    VNB
 
 endmodule
 
 `default_nettype wire
 `endif  // SKY130_FD_SC_HS__TAPVGND_1_BLACKBOX_V
+    input  VPB ;
+    input  VNB ;

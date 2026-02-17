@@ -42,7 +42,9 @@ module sky130_fd_sc_hs__a222o_1 (
     C1  ,
     C2  ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output X   ;
@@ -54,6 +56,8 @@ module sky130_fd_sc_hs__a222o_1 (
     input  C2  ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

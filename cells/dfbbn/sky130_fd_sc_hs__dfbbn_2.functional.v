@@ -31,7 +31,7 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_dfb_setdom_pg/sky130_fd_sc_hs__u_dfb_setdom_pg.v"
+`include "../../models/udp_dff_nsr_pp_pg/sky130_fd_sc_hs__udp_dff_nsr_pp_pg.v"
 
 `celldefine
 module sky130_fd_sc_hs__dfbbn_2 (
@@ -40,9 +40,7 @@ module sky130_fd_sc_hs__dfbbn_2 (
     D      ,
     CLK_N  ,
     SET_B  ,
-    RESET_B,
-    VPWR   ,
-    VGND
+    RESET_B
 );
 
     // Module ports
@@ -52,8 +50,10 @@ module sky130_fd_sc_hs__dfbbn_2 (
     input  CLK_N  ;
     input  SET_B  ;
     input  RESET_B;
-    input  VPWR   ;
-    input  VGND   ;
+
+    // Module supplies
+    supply1  VPWR   ;
+    supply0  VGND   ;
 
     // Local signals
     wire RESET          ;
@@ -68,7 +68,7 @@ module sky130_fd_sc_hs__dfbbn_2 (
     not                                          not0             (RESET , RESET_B                       );
     not                                          not1             (SET   , SET_B                         );
     not                                          not2             (CLK   , CLK_N                         );
-    sky130_fd_sc_hs__u_dfb_setdom_pg `UNIT_DELAY u_dfb_setdom_pg0 (buf_Q , SET, RESET, CLK, D, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dff$NSR_pp$PG `UNIT_DELAY u_dfb_setdom_pg0 (buf_Q , SET, RESET, CLK, D, VPWR, VGND);
     buf                                          buf0             (Q     , buf_Q                         );
     not                                          not3             (Q_N   , buf_Q                         );
 

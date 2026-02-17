@@ -40,7 +40,9 @@ module sky130_fd_sc_hs__o211a_1 (
     B1  ,
     C1  ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output X   ;
@@ -50,6 +52,8 @@ module sky130_fd_sc_hs__o211a_1 (
     input  C1  ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

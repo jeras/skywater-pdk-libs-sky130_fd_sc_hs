@@ -37,8 +37,6 @@
 
 `celldefine
 module sky130_fd_sc_hs__o21bai_4 (
-    VPWR,
-    VGND,
     Y   ,
     A1  ,
     A2  ,
@@ -46,12 +44,14 @@ module sky130_fd_sc_hs__o21bai_4 (
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Y   ;
     input  A1  ;
     input  A2  ;
     input  B1_N;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire b                 ;

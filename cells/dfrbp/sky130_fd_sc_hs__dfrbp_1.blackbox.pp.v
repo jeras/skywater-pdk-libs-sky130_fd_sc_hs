@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__dfrbp_1 (
     Q      ,
     Q_N    ,
     VPWR   ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  RESET_B;
@@ -48,6 +50,8 @@ module sky130_fd_sc_hs__dfrbp_1 (
     output Q_N    ;
     input  VPWR   ;
     input  VGND   ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

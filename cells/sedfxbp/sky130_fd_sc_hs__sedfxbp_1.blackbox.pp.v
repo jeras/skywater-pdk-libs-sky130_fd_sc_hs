@@ -41,7 +41,9 @@ module sky130_fd_sc_hs__sedfxbp_1 (
     SCD ,
     SCE ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Q   ;
@@ -53,6 +55,8 @@ module sky130_fd_sc_hs__sedfxbp_1 (
     input  SCE ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

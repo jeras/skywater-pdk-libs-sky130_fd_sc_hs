@@ -37,9 +37,7 @@ module sky130_fd_sc_hs__or3b_1 (
     X   ,
     A   ,
     B   ,
-    C_N ,
-    VPWR,
-    VGND
+    C_N
 );
 
     // Module ports
@@ -47,8 +45,10 @@ module sky130_fd_sc_hs__or3b_1 (
     input  A   ;
     input  B   ;
     input  C_N ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire             not0_out          ;

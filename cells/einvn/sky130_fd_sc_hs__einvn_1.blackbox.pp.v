@@ -36,7 +36,9 @@ module sky130_fd_sc_hs__einvn_1 (
     TE_B,
     Z   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  A   ;
@@ -44,6 +46,8 @@ module sky130_fd_sc_hs__einvn_1 (
     output Z   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

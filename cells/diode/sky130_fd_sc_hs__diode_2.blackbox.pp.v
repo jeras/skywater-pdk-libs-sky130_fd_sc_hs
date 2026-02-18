@@ -34,7 +34,9 @@
 module sky130_fd_sc_hs__diode_2 (
     DIODE,
     VPWR ,
-    VGND ,
+    VGND,
+    VPB ,
+    VNB
     VPB  ,
     VNB
 );
@@ -42,6 +44,8 @@ module sky130_fd_sc_hs__diode_2 (
     input DIODE;
     input VPWR ;
     input VGND ;
+    input  VPB ;
+    input  VNB ;
     input VPB  ;
     input VNB  ;
 endmodule

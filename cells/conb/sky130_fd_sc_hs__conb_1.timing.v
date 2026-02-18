@@ -35,16 +35,16 @@
 `celldefine
 module sky130_fd_sc_hs__conb_1 (
     HI  ,
-    LO  ,
-    VPWR,
-    VGND
+    LO
 );
 
     // Module ports
     output HI  ;
     output LO  ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire pullup0_out_HI;

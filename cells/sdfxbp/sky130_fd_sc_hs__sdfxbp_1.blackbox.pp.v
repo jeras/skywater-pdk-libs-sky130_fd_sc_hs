@@ -39,7 +39,9 @@ module sky130_fd_sc_hs__sdfxbp_1 (
     SCD ,
     SCE ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  CLK ;
@@ -50,6 +52,8 @@ module sky130_fd_sc_hs__sdfxbp_1 (
     input  SCE ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__dfsbp_2 (
     Q_N  ,
     SET_B,
     VPWR ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  CLK  ;
@@ -48,6 +50,8 @@ module sky130_fd_sc_hs__dfsbp_2 (
     input  SET_B;
     input  VPWR ;
     input  VGND ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

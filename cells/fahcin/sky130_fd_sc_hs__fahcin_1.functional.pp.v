@@ -40,7 +40,9 @@ module sky130_fd_sc_hs__fahcin_1 (
     B   ,
     CIN ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -51,6 +53,8 @@ module sky130_fd_sc_hs__fahcin_1 (
     input  CIN ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire ci                   ;

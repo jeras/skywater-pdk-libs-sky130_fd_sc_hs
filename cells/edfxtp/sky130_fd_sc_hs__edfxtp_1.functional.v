@@ -31,16 +31,14 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_edf_p_pg/sky130_fd_sc_hs__u_edf_p_pg.v"
+`include "../../models/udp_dff_pe_pp_pg/sky130_fd_sc_hs__udp_dff_pe_pp_pg.v"
 
 `celldefine
 module sky130_fd_sc_hs__edfxtp_1 (
     Q   ,
     CLK ,
     D   ,
-    DE  ,
-    VPWR,
-    VGND
+    DE
 );
 
     // Module ports
@@ -48,14 +46,16 @@ module sky130_fd_sc_hs__edfxtp_1 (
     input  CLK ;
     input  D   ;
     input  DE  ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire buf_Q;
 
     //                          Delay       Name         Output  Other arguments
-    sky130_fd_sc_hs__u_edf_p_pg `UNIT_DELAY u_edf_p_pg0 (buf_Q , D, CLK, DE, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dff$PE_pp$PG `UNIT_DELAY u_edf_p_pg0 (buf_Q , D, CLK, DE, VPWR, VGND);
     buf                                     buf0        (Q     , buf_Q                 );
 
 endmodule

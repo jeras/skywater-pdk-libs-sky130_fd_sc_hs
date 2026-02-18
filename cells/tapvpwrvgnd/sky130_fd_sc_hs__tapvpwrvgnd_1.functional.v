@@ -31,16 +31,19 @@
 
 `celldefine
 module sky130_fd_sc_hs__tapvpwrvgnd_1 (
-    VGND,
-    VPWR
+    VGND
 );
 
     // Module ports
-    input VGND;
-    input VPWR;
+    supply0 VGND;
+
+    // Module supplies
+    supply1 VPWR;
      // No contents.
 endmodule
 `endcelldefine
 
 `default_nettype wire
+
+    // Module supplies
 `endif  // SKY130_FD_SC_HS__TAPVPWRVGND_1_FUNCTIONAL_V

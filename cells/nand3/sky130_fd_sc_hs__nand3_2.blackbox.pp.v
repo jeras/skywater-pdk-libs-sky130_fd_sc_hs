@@ -37,7 +37,9 @@ module sky130_fd_sc_hs__nand3_2 (
     B   ,
     C   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Y   ;
@@ -46,6 +48,8 @@ module sky130_fd_sc_hs__nand3_2 (
     input  C   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

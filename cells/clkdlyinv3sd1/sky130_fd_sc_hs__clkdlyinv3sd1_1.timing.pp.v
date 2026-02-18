@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__clkdlyinv3sd1_1 (
     Y   ,
     A   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -46,6 +48,8 @@ module sky130_fd_sc_hs__clkdlyinv3sd1_1 (
     input  A   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire   not0_out_Y        ;

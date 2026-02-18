@@ -36,16 +36,16 @@
 `celldefine
 module sky130_fd_sc_hs__dlymetal6s2s_1 (
     X   ,
-    A   ,
-    VPWR,
-    VGND
+    A
 );
 
     // Module ports
     output X   ;
     input  A   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   buf0_out_X        ;

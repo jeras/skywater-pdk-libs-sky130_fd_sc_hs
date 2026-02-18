@@ -44,7 +44,9 @@ module sky130_fd_sc_hs__a222oi_2 (
     C1  ,
     C2  ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -57,6 +59,8 @@ module sky130_fd_sc_hs__a222oi_2 (
     input  C2  ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire    nand0_out         ;

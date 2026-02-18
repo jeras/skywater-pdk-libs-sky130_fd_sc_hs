@@ -38,9 +38,7 @@ module sky130_fd_sc_hs__and4bb_2 (
     A_N ,
     B_N ,
     C   ,
-    D   ,
-    VPWR,
-    VGND
+    D
 );
 
     // Module ports
@@ -49,8 +47,10 @@ module sky130_fd_sc_hs__and4bb_2 (
     input  B_N ;
     input  C   ;
     input  D   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   nor0_out          ;

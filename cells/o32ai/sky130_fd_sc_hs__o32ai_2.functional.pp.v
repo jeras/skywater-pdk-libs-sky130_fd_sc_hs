@@ -36,25 +36,29 @@
 
 `celldefine
 module sky130_fd_sc_hs__o32ai_2 (
-    VPWR,
-    VGND,
     Y   ,
     A1  ,
     A2  ,
     A3  ,
     B1  ,
-    B2
+    B2,
+    VPWR,
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Y   ;
     input  A1  ;
     input  A2  ;
     input  A3  ;
     input  B1  ;
     input  B2  ;
+    input  VPWR;
+    input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire    nor0_out          ;

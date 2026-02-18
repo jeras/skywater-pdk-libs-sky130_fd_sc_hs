@@ -39,7 +39,9 @@ module sky130_fd_sc_hs__xnor3_4 (
     B   ,
     C   ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -49,6 +51,8 @@ module sky130_fd_sc_hs__xnor3_4 (
     input  C   ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire xnor0_out_X       ;

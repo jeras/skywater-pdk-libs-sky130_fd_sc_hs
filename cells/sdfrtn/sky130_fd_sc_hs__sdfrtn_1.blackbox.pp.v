@@ -40,7 +40,9 @@ module sky130_fd_sc_hs__sdfrtn_1 (
     SCD    ,
     SCE    ,
     VPWR   ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  RESET_B;
@@ -51,6 +53,8 @@ module sky130_fd_sc_hs__sdfrtn_1 (
     input  SCE    ;
     input  VPWR   ;
     input  VGND   ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

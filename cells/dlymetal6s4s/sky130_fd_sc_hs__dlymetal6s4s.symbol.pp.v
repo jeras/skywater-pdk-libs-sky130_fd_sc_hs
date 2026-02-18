@@ -40,7 +40,9 @@ module sky130_fd_sc_hs__dlymetal6s4s (
 
     //# {{power|Power}}
     input  VPWR,
-    input  VGND
+    input  VGND,
+    input  VPB ,
+    input  VNB
 );
 endmodule
 

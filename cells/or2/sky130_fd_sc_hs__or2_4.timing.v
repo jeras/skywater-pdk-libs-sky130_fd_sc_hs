@@ -36,17 +36,17 @@
 module sky130_fd_sc_hs__or2_4 (
     X   ,
     A   ,
-    B   ,
-    VPWR,
-    VGND
+    B
 );
 
     // Module ports
     output X   ;
     input  A   ;
     input  B   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   or0_out_X         ;

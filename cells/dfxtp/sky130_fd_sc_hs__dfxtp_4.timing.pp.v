@@ -30,23 +30,27 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_df_p_no_pg/sky130_fd_sc_hs__u_df_p_no_pg.v"
+`include "../../models/udp_dff_p_pp_pg_n/sky130_fd_sc_hs__udp_dff_p_pp_pg_n.v"
 
 `celldefine
 module sky130_fd_sc_hs__dfxtp_4 (
-    VPWR,
-    VGND,
     Q   ,
     CLK ,
-    D
+    D,
+    VPWR,
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Q   ;
     input  CLK ;
     input  D   ;
+    input  VPWR;
+    input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire buf_Q      ;
@@ -56,7 +60,7 @@ module sky130_fd_sc_hs__dfxtp_4 (
     wire awake      ;
 
     //                            Name           Output  Other arguments
-    sky130_fd_sc_hs__u_df_p_no_pg u_df_p_no_pg0 (buf_Q , D_delayed, CLK_delayed, notifier, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dff$P_pp$PG$N u_df_p_no_pg0 (buf_Q , D_delayed, CLK_delayed, notifier, VPWR, VGND);
     assign awake = ( VPWR === 1'b1 );
     buf                           buf0          (Q     , buf_Q                                       );
 

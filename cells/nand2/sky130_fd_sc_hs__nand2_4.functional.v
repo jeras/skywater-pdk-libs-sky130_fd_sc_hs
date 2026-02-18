@@ -34,19 +34,19 @@
 
 `celldefine
 module sky130_fd_sc_hs__nand2_4 (
-    VPWR,
-    VGND,
     Y   ,
     A   ,
     B
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Y   ;
     input  A   ;
     input  B   ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   nand0_out_Y       ;

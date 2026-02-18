@@ -34,19 +34,23 @@
 
 `celldefine
 module sky130_fd_sc_hs__einvn_8 (
-    VPWR,
-    VGND,
     Z   ,
     A   ,
-    TE_B
+    TE_B,
+    VPWR,
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output Z   ;
     input  A   ;
     input  TE_B;
+    input  VPWR;
+    input  VGND;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire udp_pwrgood_pp$PG0_out_A  ;

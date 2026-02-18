@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__fahcon_1 (
     B     ,
     CI    ,
     VPWR  ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output COUT_N;
@@ -48,6 +50,8 @@ module sky130_fd_sc_hs__fahcon_1 (
     input  CI    ;
     input  VPWR  ;
     input  VGND  ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

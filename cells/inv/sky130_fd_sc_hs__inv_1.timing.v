@@ -35,16 +35,16 @@
 `celldefine
 module sky130_fd_sc_hs__inv_1 (
     Y   ,
-    A   ,
-    VPWR,
-    VGND
+    A
 );
 
     // Module ports
     output Y   ;
     input  A   ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   not0_out_Y        ;

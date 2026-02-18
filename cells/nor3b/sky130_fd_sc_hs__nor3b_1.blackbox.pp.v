@@ -39,7 +39,9 @@ module sky130_fd_sc_hs__nor3b_1 (
     B   ,
     C_N ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output Y   ;
@@ -48,6 +50,8 @@ module sky130_fd_sc_hs__nor3b_1 (
     input  C_N ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

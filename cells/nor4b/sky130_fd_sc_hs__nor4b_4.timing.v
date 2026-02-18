@@ -38,9 +38,7 @@ module sky130_fd_sc_hs__nor4b_4 (
     A   ,
     B   ,
     C   ,
-    D_N ,
-    VPWR,
-    VGND
+    D_N
 );
 
     // Module ports
@@ -49,8 +47,10 @@ module sky130_fd_sc_hs__nor4b_4 (
     input  B   ;
     input  C   ;
     input  D_N ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire    not0_out          ;

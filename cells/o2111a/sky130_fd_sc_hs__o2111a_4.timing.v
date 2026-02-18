@@ -41,9 +41,7 @@ module sky130_fd_sc_hs__o2111a_4 (
     A2  ,
     B1  ,
     C1  ,
-    D1  ,
-    VPWR,
-    VGND
+    D1
 );
 
     // Module ports
@@ -53,8 +51,10 @@ module sky130_fd_sc_hs__o2111a_4 (
     input  B1  ;
     input  C1  ;
     input  D1  ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire    or0_out           ;

@@ -37,7 +37,9 @@ module sky130_fd_sc_hs__dfstp_4 (
     Q    ,
     SET_B,
     VPWR ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     input  CLK  ;
@@ -46,6 +48,8 @@ module sky130_fd_sc_hs__dfstp_4 (
     input  SET_B;
     input  VPWR ;
     input  VGND ;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

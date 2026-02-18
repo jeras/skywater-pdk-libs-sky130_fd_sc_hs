@@ -38,7 +38,9 @@ module sky130_fd_sc_hs__fa_1 (
     B   ,
     CIN ,
     VPWR,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     output COUT;
@@ -48,6 +50,8 @@ module sky130_fd_sc_hs__fa_1 (
     input  CIN ;
     input  VPWR;
     input  VGND;
+    input  VPB ;
+    input  VNB ;
 endmodule
 
 `default_nettype wire

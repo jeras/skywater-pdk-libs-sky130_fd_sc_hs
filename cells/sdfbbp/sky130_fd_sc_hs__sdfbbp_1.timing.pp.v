@@ -31,8 +31,8 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_dfb_setdom_notify_pg/sky130_fd_sc_hs__u_dfb_setdom_notify_pg.v"
-`include "../u_mux_2/sky130_fd_sc_hs__u_mux_2.v"
+`include "../../models/udp_dff_nsr_pp_pg_n/sky130_fd_sc_hs__udp_dff_nsr_pp_pg_n.v"
+`include "../../models/u_mux_2/sky130_fd_sc_hs__u_mux_2.v"
 
 `celldefine
 module sky130_fd_sc_hs__sdfbbp_1 (
@@ -45,7 +45,9 @@ module sky130_fd_sc_hs__sdfbbp_1 (
     SET_B  ,
     RESET_B,
     VPWR   ,
-    VGND
+    VGND,
+    VPB ,
+    VNB
 );
 
     // Module ports
@@ -59,6 +61,8 @@ module sky130_fd_sc_hs__sdfbbp_1 (
     input  RESET_B;
     input  VPWR   ;
     input  VGND   ;
+    input  VPB ;
+    input  VNB ;
 
     // Local signals
     wire RESET          ;
@@ -83,8 +87,8 @@ module sky130_fd_sc_hs__sdfbbp_1 (
     //                                      Name                     Output   Other arguments
     not                                     not0                    (RESET  , RESET_B_delayed                                       );
     not                                     not1                    (SET    , SET_B_delayed                                         );
-    sky130_fd_sc_hs__u_mux_2_1              u_mux_20                (mux_out, D_delayed, SCD_delayed, SCE_delayed                   );
-    sky130_fd_sc_hs__u_dfb_setdom_notify_pg u_dfb_setdom_notify_pg0 (buf_Q  , SET, RESET, CLK_delayed, mux_out, notifier, VPWR, VGND);
+    sky130_fd_sc_hs__udp_mux_2to1              u_mux_20                (mux_out, D_delayed, SCD_delayed, SCE_delayed                   );
+    sky130_fd_sc_hs__udp_dff$NSR_pp$PG$N u_dfb_setdom_notify_pg0 (buf_Q  , SET, RESET, CLK_delayed, mux_out, notifier, VPWR, VGND);
     assign awake = ( VPWR === 1'b1 );
     assign cond0 = ( awake && ( RESET_B_delayed === 1'b1 ) );
     assign cond1 = ( awake && ( SET_B_delayed === 1'b1 ) );

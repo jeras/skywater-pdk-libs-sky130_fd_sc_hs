@@ -38,9 +38,7 @@ module sky130_fd_sc_hs__fa_1 (
     SUM ,
     A   ,
     B   ,
-    CIN ,
-    VPWR,
-    VGND
+    CIN
 );
 
     // Module ports
@@ -49,8 +47,10 @@ module sky130_fd_sc_hs__fa_1 (
     input  A   ;
     input  B   ;
     input  CIN ;
-    input  VPWR;
-    input  VGND;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire              or0_out              ;

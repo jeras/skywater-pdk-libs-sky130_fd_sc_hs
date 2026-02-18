@@ -30,12 +30,10 @@
 `default_nettype none
 
 // Import sub cells.
-`include "../u_dl_p_r_pg/sky130_fd_sc_hs__u_dl_p_r_pg.v"
+`include "../../models/udp_dlatch_pr_pp_pg/sky130_fd_sc_hs__udp_dlatch_pr_pp_pg.v"
 
 `celldefine
 module sky130_fd_sc_hs__dlrtn_4 (
-    VPWR   ,
-    VGND   ,
     Q      ,
     RESET_B,
     D      ,
@@ -43,12 +41,14 @@ module sky130_fd_sc_hs__dlrtn_4 (
 );
 
     // Module ports
-    input  VPWR   ;
-    input  VGND   ;
     output Q      ;
     input  RESET_B;
     input  D      ;
     input  GATE_N ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire RESET  ;
@@ -58,7 +58,7 @@ module sky130_fd_sc_hs__dlrtn_4 (
     //                           Delay       Name          Output   Other arguments
     not                                      not0         (RESET  , RESET_B                      );
     not                                      not1         (intgate, GATE_N                       );
-    sky130_fd_sc_hs__u_dl_p_r_pg `UNIT_DELAY u_dl_p_r_pg0 (buf_Q  , D, intgate, RESET, VPWR, VGND);
+    sky130_fd_sc_hs__udp_dlatch$PR_pp$PG `UNIT_DELAY u_dl_p_r_pg0 (buf_Q  , D, intgate, RESET, VPWR, VGND);
     buf                                      buf0         (Q      , buf_Q                        );
 
 endmodule

@@ -40,7 +40,9 @@ module sky130_fd_sc_hs__clkdlyinv5sd3 (
 
     //# {{power|Power}}
     input  VPWR,
-    input  VGND
+    input  VGND,
+    input  VPB ,
+    input  VNB
 );
 endmodule
 

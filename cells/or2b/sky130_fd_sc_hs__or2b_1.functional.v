@@ -34,19 +34,19 @@
 
 `celldefine
 module sky130_fd_sc_hs__or2b_1 (
-    VPWR,
-    VGND,
     X   ,
     A   ,
     B_N
 );
 
     // Module ports
-    input  VPWR;
-    input  VGND;
     output X   ;
     input  A   ;
     input  B_N ;
+
+    // Module supplies
+    supply1  VPWR;
+    supply0  VGND;
 
     // Local signals
     wire   not0_out          ;

@@ -31,15 +31,12 @@
 
 `celldefine
 module sky130_fd_sc_hs__decap_8 (
-    VGND
 );
 
-    // Module ports
-    supply0 VGND;
-
     // Module supplies
+    supply0 VGND;
     supply1 VPWR;
-     // No contents.
+    // No contents.
 endmodule
 `endcelldefine
 

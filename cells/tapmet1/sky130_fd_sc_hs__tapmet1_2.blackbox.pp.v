@@ -32,11 +32,11 @@
 
 (* blackbox *)
 module sky130_fd_sc_hs__tapmet1_2 (
-);,
     VPWR,
     VGND,
     VPB ,
     VNB
+);
 
     input  VPWR;
     input  VGND;

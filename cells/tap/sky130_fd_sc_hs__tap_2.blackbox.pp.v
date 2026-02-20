@@ -32,16 +32,17 @@
 
 (* blackbox *)
 module sky130_fd_sc_hs__tap_2 (
-);,
     VPWR,
     VGND,
-    VPB ,
+    VPB,
     VNB
+);
 
+    // Module ports
     input  VPWR;
     input  VGND;
-    input  VPB ;
-    input  VNB ;
+    input  VPB;
+    input  VNB;
 endmodule
 
 `default_nettype wire

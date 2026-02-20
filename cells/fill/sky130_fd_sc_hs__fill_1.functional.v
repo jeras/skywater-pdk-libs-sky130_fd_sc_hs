@@ -34,12 +34,11 @@ module sky130_fd_sc_hs__fill_1 ();
 
     // Module supplies
     supply1 VPWR;
-    VGND,
-    VPB ,
-    VNB
+    supply0 VGND;
     supply1 VPB ;
     supply0 VNB ;
-     // No contents.
+
+    // No contents.
 endmodule
 `endcelldefine
 

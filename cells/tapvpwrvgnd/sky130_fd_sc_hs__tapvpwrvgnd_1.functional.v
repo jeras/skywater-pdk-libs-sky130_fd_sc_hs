@@ -31,15 +31,15 @@
 
 `celldefine
 module sky130_fd_sc_hs__tapvpwrvgnd_1 (
-    VGND
 );
 
-    // Module ports
-    supply0 VGND;
+    // No module ports
 
     // Module supplies
+    supply0 VGND;
     supply1 VPWR;
-     // No contents.
+
+    // No contents.
 endmodule
 `endcelldefine
 

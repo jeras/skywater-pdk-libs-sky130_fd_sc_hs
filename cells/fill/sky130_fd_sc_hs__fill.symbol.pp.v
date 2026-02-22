@@ -34,11 +34,9 @@
 (* blackbox *)
 module sky130_fd_sc_hs__fill (
     //# {{power|Power}}
-    input VPB ,
     input VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input VGND,
+    input VPB ,
     input VNB
 );
 endmodule

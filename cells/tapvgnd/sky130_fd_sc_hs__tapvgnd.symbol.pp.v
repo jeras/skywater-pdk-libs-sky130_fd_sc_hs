@@ -37,8 +37,7 @@ module sky130_fd_sc_hs__tapvgnd (
     //# {{power|Power}}
     input VPWR,
     input  VGND,
-    input  VPB ,
-    input  VNB
+    input  VPB
 );
 endmodule
 

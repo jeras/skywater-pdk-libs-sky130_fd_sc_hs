@@ -33,12 +33,14 @@
 `celldefine
 module sky130_fd_sc_hs__tapvgnd2_1 (
     VGND,
-    VPWR
+    VPWR,
+    VPB
 );
 
     // Module ports
     input VGND;
     input VPWR;
+    input VPB;
      // No contents.
 endmodule
 `endcelldefine

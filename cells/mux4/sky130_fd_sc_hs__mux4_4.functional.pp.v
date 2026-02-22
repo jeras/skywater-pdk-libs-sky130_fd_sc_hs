@@ -66,7 +66,7 @@ module sky130_fd_sc_hs__mux4_4 (
     wire    udp_pwrgood_pp$PG0_out_X;
 
     //                           Name          Output              Other arguments
-    sky130_fd_sc_hs__u_mux_4_2   u_mux_40     (u_mux_40_out_X    , A0, A1, A2, A3, S0, S1    );
+    sky130_fd_sc_hs__udp_mux_4to2   u_mux_40     (u_mux_40_out_X    , A0, A1, A2, A3, S0, S1    );
     sky130_fd_sc_hs__udp_pwrgood_pp$PG udp_pwrgood_pp$PG0 (udp_pwrgood_pp$PG0_out_X, u_mux_40_out_X, VPWR, VGND);
     buf                          buf0         (X                 , udp_pwrgood_pp$PG0_out_X        );
 

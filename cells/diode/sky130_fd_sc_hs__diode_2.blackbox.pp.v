@@ -37,8 +37,6 @@ module sky130_fd_sc_hs__diode_2 (
     VGND,
     VPB ,
     VNB
-    VPB  ,
-    VNB
 );
 
     input DIODE;
@@ -46,8 +44,6 @@ module sky130_fd_sc_hs__diode_2 (
     input VGND ;
     input  VPB ;
     input  VNB ;
-    input VPB  ;
-    input VNB  ;
 endmodule
 
 `default_nettype wire

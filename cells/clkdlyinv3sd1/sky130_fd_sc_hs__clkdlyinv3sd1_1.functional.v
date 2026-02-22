@@ -40,8 +40,8 @@ module sky130_fd_sc_hs__clkdlyinv3sd1_1 (
 );
 
     // Module ports
-    output Y   ;
-    input  A   ;
+    output wire Y   ;
+    input wire  A   ;
 
     // Module supplies
     supply1  VPWR;

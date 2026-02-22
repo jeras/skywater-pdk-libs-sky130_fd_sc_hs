@@ -42,9 +42,9 @@ module sky130_fd_sc_hs__xor2_2 (
 );
 
     // Module ports
-    output X   ;
-    input  A   ;
-    input  B   ;
+    output wire X   ;
+    input wire  A   ;
+    input wire  B   ;
 
     // Module supplies
     supply1  VPWR;

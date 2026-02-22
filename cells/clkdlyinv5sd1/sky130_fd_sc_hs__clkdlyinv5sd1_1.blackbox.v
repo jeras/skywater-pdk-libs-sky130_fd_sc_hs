@@ -37,8 +37,8 @@ module sky130_fd_sc_hs__clkdlyinv5sd1_1 (
     A
 );
 
-    output Y;
-    input  A;
+    output wire Y;
+    input wire  A;
 
     // Voltage supply signals
     supply1 VPWR;

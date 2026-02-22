@@ -37,9 +37,9 @@ module sky130_fd_sc_hs__einvp_2 (
     Z
 );
 
-    input  A ;
-    input  TE;
-    output Z ;
+    input wire  A ;
+    input wire  TE;
+    output wire Z ;
 
     // Voltage supply signals
     supply1 VPWR;

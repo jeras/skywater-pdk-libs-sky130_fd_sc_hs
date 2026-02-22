@@ -44,11 +44,11 @@ module sky130_fd_sc_hs__o31ai_2 (
 );
 
     // Module ports
-    output Y   ;
-    input  A1  ;
-    input  A2  ;
-    input  A3  ;
-    input  B1  ;
+    output wire Y   ;
+    input wire  A1  ;
+    input wire  A2  ;
+    input wire  A3  ;
+    input wire  B1  ;
 
     // Module supplies
     supply1  VPWR;

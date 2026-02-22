@@ -42,13 +42,13 @@ module sky130_fd_sc_hs__sdfsbp_1 (
     SET_B
 );
 
-    input  CLK  ;
-    input  D    ;
-    output Q    ;
-    output Q_N  ;
-    input  SCD  ;
-    input  SCE  ;
-    input  SET_B;
+    input wire  CLK  ;
+    input wire  D    ;
+    output wire Q    ;
+    output wire Q_N  ;
+    input wire  SCD  ;
+    input wire  SCE  ;
+    input wire  SET_B;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -38,10 +38,10 @@ module sky130_fd_sc_hs__dfrtp_2 (
     Q
 );
 
-    input  RESET_B;
-    input  CLK    ;
-    input  D      ;
-    output Q      ;
+    input wire  RESET_B;
+    input wire  CLK    ;
+    input wire  D      ;
+    output wire Q      ;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -38,10 +38,10 @@ module sky130_fd_sc_hs__tap_2 (
 );
 
     // Module ports
-    input VGND;
-    input VPWR;
-    input VPB;
-    input VNB;
+    input wire VGND;
+    input wire VPWR;
+    input wire VPB;
+    input wire VNB;
      // No contents.
 endmodule
 `endcelldefine

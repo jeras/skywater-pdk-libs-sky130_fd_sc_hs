@@ -40,9 +40,9 @@ module sky130_fd_sc_hs__einvp_2 (
 );
 
     // Module ports
-    input  A   ;
-    input  TE  ;
-    output Z   ;
+    input wire  A   ;
+    input wire  TE  ;
+    output wire Z   ;
 
     // Module supplies
     supply1  VPWR;

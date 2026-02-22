@@ -42,14 +42,14 @@ module sky130_fd_sc_hs__dfstp_4 (
     VNB
 );
 
-    input  CLK  ;
-    input  D    ;
-    output Q    ;
-    input  SET_B;
-    input  VPWR ;
-    input  VGND ;
-    input  VPB ;
-    input  VNB ;
+    input wire  CLK  ;
+    input wire  D    ;
+    output wire Q    ;
+    input wire  SET_B;
+    input wire  VPWR ;
+    input wire  VGND ;
+    input wire  VPB ;
+    input wire  VNB ;
 endmodule
 
 `default_nettype wire

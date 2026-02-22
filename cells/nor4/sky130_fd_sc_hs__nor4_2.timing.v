@@ -44,11 +44,11 @@ module sky130_fd_sc_hs__nor4_2 (
 );
 
     // Module ports
-    output Y   ;
-    input  A   ;
-    input  B   ;
-    input  C   ;
-    input  D   ;
+    output wire Y   ;
+    input wire  A   ;
+    input wire  B   ;
+    input wire  C   ;
+    input wire  D   ;
 
     // Module supplies
     supply1  VPWR;

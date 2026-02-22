@@ -46,14 +46,14 @@ module sky130_fd_sc_hs__edfxtp_1 (
 );
 
     // Module ports
-    output Q   ;
-    input  CLK ;
-    input  D   ;
-    input  DE  ;
-    input  VPWR;
-    input  VGND;
-    input  VPB ;
-    input  VNB ;
+    output wire Q   ;
+    input wire  CLK ;
+    input wire  D   ;
+    input wire  DE  ;
+    input wire  VPWR;
+    input wire  VGND;
+    input wire  VPB ;
+    input wire  VNB ;
 
     // Local signals
     wire buf_Q      ;

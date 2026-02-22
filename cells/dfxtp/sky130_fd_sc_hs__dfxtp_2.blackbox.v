@@ -37,9 +37,9 @@ module sky130_fd_sc_hs__dfxtp_2 (
     Q
 );
 
-    input  CLK;
-    input  D  ;
-    output Q  ;
+    input wire  CLK;
+    input wire  D  ;
+    output wire Q  ;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -44,5 +44,5 @@ endmodule
 
 `default_nettype wire
 `endif  // SKY130_FD_SC_HS__TAPVGND_SYMBOL_V
-    input  VPB ;
-    input  VNB ;
+    input wire  VPB ;
+    input wire  VNB ;

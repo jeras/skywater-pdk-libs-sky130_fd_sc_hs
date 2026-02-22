@@ -42,14 +42,14 @@ module sky130_fd_sc_hs__dlrtn_1 (
     VNB
 );
 
-    input  RESET_B;
-    input  D      ;
-    input  GATE_N ;
-    output Q      ;
-    input  VPWR   ;
-    input  VGND   ;
-    input  VPB ;
-    input  VNB ;
+    input wire  RESET_B;
+    input wire  D      ;
+    input wire  GATE_N ;
+    output wire Q      ;
+    input wire  VPWR   ;
+    input wire  VGND   ;
+    input wire  VPB ;
+    input wire  VNB ;
 endmodule
 
 `default_nettype wire

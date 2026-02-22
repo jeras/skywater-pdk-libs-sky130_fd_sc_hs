@@ -40,9 +40,9 @@ module sky130_fd_sc_hs__dfxtp_1 (
 );
 
     // Module ports
-    input  CLK ;
-    input  D   ;
-    output Q   ;
+    input wire  CLK ;
+    input wire  D   ;
+    output wire Q   ;
 
     // Module supplies
     supply1  VPWR;

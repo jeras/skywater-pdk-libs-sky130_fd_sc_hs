@@ -34,14 +34,14 @@
 (* blackbox *)
 module sky130_fd_sc_hs__clkinv (
     //# {{data|Data Signals}}
-    input  A   ,
-    output Y   ,
+    input wire  A   ,
+    output wire Y   ,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

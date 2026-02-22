@@ -36,16 +36,16 @@
 (* blackbox *)
 module sky130_fd_sc_hs__o21a (
     //# {{data|Data Signals}}
-    input  A1  ,
-    input  A2  ,
-    input  B1  ,
-    output X   ,
+    input wire  A1  ,
+    input wire  A2  ,
+    input wire  B1  ,
+    output wire X   ,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

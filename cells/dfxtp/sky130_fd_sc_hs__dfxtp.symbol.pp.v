@@ -34,17 +34,17 @@
 (* blackbox *)
 module sky130_fd_sc_hs__dfxtp (
     //# {{data|Data Signals}}
-    input  D   ,
-    output Q   ,
+    input wire  D   ,
+    output wire Q   ,
 
     //# {{clocks|Clocking}}
-    input  CLK ,
+    input wire  CLK ,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

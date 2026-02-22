@@ -35,8 +35,8 @@
 (* blackbox *)
 module sky130_fd_sc_hs__clkdlyinv5sd1 (
     //# {{data|Data Signals}}
-    input  A,
-    output Y
+    input wire  A,
+    output wire Y
 );
 
     // Voltage supply signals

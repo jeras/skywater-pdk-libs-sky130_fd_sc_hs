@@ -34,16 +34,16 @@
 (* blackbox *)
 module sky130_fd_sc_hs__ha (
     //# {{data|Data Signals}}
-    input  A   ,
-    input  B   ,
-    output COUT,
-    output SUM ,
+    input wire  A   ,
+    input wire  B   ,
+    output wire COUT,
+    output wire SUM ,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

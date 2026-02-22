@@ -34,15 +34,15 @@
 (* blackbox *)
 module sky130_fd_sc_hs__dlclkp (
     //# {{clocks|Clocking}}
-    input  CLK ,
-    input  GATE,
-    output GCLK,
+    input wire  CLK ,
+    input wire  GATE,
+    output wire GCLK,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

@@ -34,12 +34,12 @@
 (* blackbox *)
 module sky130_fd_sc_hs__dlxbn (
     //# {{data|Data Signals}}
-    input  D     ,
-    output Q     ,
-    output Q_N   ,
+    input wire  D     ,
+    output wire Q     ,
+    output wire Q_N   ,
 
     //# {{clocks|Clocking}}
-    input  GATE_N
+    input wire  GATE_N
 );
 
     // Voltage supply signals

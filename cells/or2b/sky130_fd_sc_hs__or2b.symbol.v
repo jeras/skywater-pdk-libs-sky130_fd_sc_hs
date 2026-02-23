@@ -34,9 +34,9 @@
 (* blackbox *)
 module sky130_fd_sc_hs__or2b (
     //# {{data|Data Signals}}
-    input  A  ,
-    input  B_N,
-    output X
+    input wire  A  ,
+    input wire  B_N,
+    output wire X
 );
 
     // Voltage supply signals

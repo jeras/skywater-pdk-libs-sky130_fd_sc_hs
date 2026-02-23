@@ -42,14 +42,14 @@ module sky130_fd_sc_hs__dfrtp_4 (
     VNB
 );
 
-    input  RESET_B;
-    input  CLK    ;
-    input  D      ;
-    output Q      ;
-    input  VPWR   ;
-    input  VGND   ;
-    input  VPB ;
-    input  VNB ;
+    input wire  RESET_B;
+    input wire  CLK    ;
+    input wire  D      ;
+    output wire Q      ;
+    input wire  VPWR   ;
+    input wire  VGND   ;
+    input wire  VPB ;
+    input wire  VNB ;
 endmodule
 
 `default_nettype wire

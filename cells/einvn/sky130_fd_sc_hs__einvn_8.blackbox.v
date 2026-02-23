@@ -37,9 +37,9 @@ module sky130_fd_sc_hs__einvn_8 (
     Z
 );
 
-    input  A   ;
-    input  TE_B;
-    output Z   ;
+    input wire  A   ;
+    input wire  TE_B;
+    output wire Z   ;
 
     // Voltage supply signals
     supply1 VPWR;

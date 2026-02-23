@@ -50,17 +50,17 @@ module sky130_fd_sc_hs__a222o_1 (
 );
 
     // Module ports
-    output X   ;
-    input  A1  ;
-    input  A2  ;
-    input  B1  ;
-    input  B2  ;
-    input  C1  ;
-    input  C2  ;
-    input  VPWR;
-    input  VGND;
-    input  VPB ;
-    input  VNB ;
+    output wire X   ;
+    input wire  A1  ;
+    input wire  A2  ;
+    input wire  B1  ;
+    input wire  B2  ;
+    input wire  C1  ;
+    input wire  C2  ;
+    input wire  VPWR;
+    input wire  VGND;
+    input wire  VPB ;
+    input wire  VNB ;
 
     // Local signals
     wire    and0_out          ;

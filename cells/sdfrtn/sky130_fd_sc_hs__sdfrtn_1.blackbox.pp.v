@@ -45,16 +45,16 @@ module sky130_fd_sc_hs__sdfrtn_1 (
     VNB
 );
 
-    input  RESET_B;
-    input  CLK_N  ;
-    input  D      ;
-    output Q      ;
-    input  SCD    ;
-    input  SCE    ;
-    input  VPWR   ;
-    input  VGND   ;
-    input  VPB ;
-    input  VNB ;
+    input wire  RESET_B;
+    input wire  CLK_N  ;
+    input wire  D      ;
+    output wire Q      ;
+    input wire  SCD    ;
+    input wire  SCE    ;
+    input wire  VPWR   ;
+    input wire  VGND   ;
+    input wire  VPB ;
+    input wire  VNB ;
 endmodule
 
 `default_nettype wire

@@ -34,8 +34,8 @@
 (* blackbox *)
 module sky130_fd_sc_hs__tapvpwrvgnd (
     //# {{power|Power}}
-    input VPWR,
-    input VGND
+    input wire VPWR,
+    input wire VGND
 );
 endmodule
 

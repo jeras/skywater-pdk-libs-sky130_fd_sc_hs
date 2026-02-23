@@ -37,9 +37,9 @@ module sky130_fd_sc_hs__or2b_2 (
     B_N
 );
 
-    output X  ;
-    input  A  ;
-    input  B_N;
+    output wire X  ;
+    input wire  A  ;
+    input wire  B_N;
 
     // Voltage supply signals
     supply1 VPWR;

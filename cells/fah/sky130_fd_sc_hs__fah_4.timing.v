@@ -42,11 +42,11 @@ module sky130_fd_sc_hs__fah_4 (
 );
 
     // Module ports
-    output COUT;
-    output SUM ;
-    input  A   ;
-    input  B   ;
-    input  CI  ;
+    output wire COUT;
+    output wire SUM ;
+    input wire  A   ;
+    input wire  B   ;
+    input wire  CI  ;
 
     // Module supplies
     supply1  VPWR;

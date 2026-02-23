@@ -43,11 +43,11 @@ module sky130_fd_sc_hs__sdfxtp_1 (
 );
 
     // Module ports
-    input  CLK ;
-    input  D   ;
-    output Q   ;
-    input  SCD ;
-    input  SCE ;
+    input wire  CLK ;
+    input wire  D   ;
+    output wire Q   ;
+    input wire  SCD ;
+    input wire  SCE ;
 
     // Module supplies
     supply1  VPWR;

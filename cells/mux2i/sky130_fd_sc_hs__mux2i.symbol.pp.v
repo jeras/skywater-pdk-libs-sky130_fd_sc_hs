@@ -34,18 +34,18 @@
 (* blackbox *)
 module sky130_fd_sc_hs__mux2i (
     //# {{data|Data Signals}}
-    input  A0  ,
-    input  A1  ,
-    output Y   ,
+    input wire  A0  ,
+    input wire  A1  ,
+    output wire Y   ,
 
     //# {{control|Control Signals}}
-    input  S   ,
+    input wire  S   ,
 
     //# {{power|Power}}
-    input  VPWR,
-    input  VGND,
-    input  VPB ,
-    input  VNB
+    input wire  VPWR,
+    input wire  VGND,
+    input wire  VPB ,
+    input wire  VNB
 );
 endmodule
 

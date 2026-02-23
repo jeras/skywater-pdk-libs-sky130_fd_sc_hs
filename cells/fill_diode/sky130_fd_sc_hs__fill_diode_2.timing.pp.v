@@ -38,10 +38,10 @@ module sky130_fd_sc_hs__fill_diode_2 (
 );
 
     // Module ports
-    input VPWR;
-    input VGND;
-    input VPB ;
-    input VNB ;
+    input wire VPWR;
+    input wire VGND;
+    input wire VPB ;
+    input wire VNB ;
      // No contents.
 endmodule
 `endcelldefine

@@ -34,7 +34,7 @@
 (* blackbox *)
 module sky130_fd_sc_hs__diode (
     //# {{power|Power}}
-    input DIODE
+    input wire DIODE
 );
 
     // Voltage supply signals

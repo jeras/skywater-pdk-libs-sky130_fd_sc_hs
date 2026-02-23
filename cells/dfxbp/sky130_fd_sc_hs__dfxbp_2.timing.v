@@ -41,10 +41,10 @@ module sky130_fd_sc_hs__dfxbp_2 (
 );
 
     // Module ports
-    input  CLK ;
-    input  D   ;
-    output Q   ;
-    output Q_N ;
+    input wire  CLK ;
+    input wire  D   ;
+    output wire Q   ;
+    output wire Q_N ;
 
     // Module supplies
     supply1  VPWR;

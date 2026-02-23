@@ -38,9 +38,9 @@ module sky130_fd_sc_hs__tapvgnd2_1 (
     VPB
 );
 
-    input  VPWR;
-    input  VGND;
-    input  VPB ;
+    input wire  VPWR;
+    input wire  VGND;
+    input wire  VPB ;
 endmodule
 
 `default_nettype wire

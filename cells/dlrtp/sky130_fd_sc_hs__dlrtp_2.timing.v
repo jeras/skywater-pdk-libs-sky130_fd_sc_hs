@@ -42,10 +42,10 @@ module sky130_fd_sc_hs__dlrtp_2 (
 );
 
     // Module ports
-    input  RESET_B;
-    input  D      ;
-    input  GATE   ;
-    output Q      ;
+    input wire  RESET_B;
+    input wire  D      ;
+    input wire  GATE   ;
+    output wire Q      ;
 
     // Module supplies
     supply1  VPWR   ;

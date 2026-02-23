@@ -39,8 +39,8 @@ module sky130_fd_sc_hs__conb_1 (
 );
 
     // Module ports
-    output HI  ;
-    output LO  ;
+    output wire HI  ;
+    output wire LO  ;
 
     // Module supplies
     supply1  VPWR;

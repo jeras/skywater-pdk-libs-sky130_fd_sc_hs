@@ -40,8 +40,8 @@ module sky130_fd_sc_hs__dlymetal6s6s_1 (
 );
 
     // Module ports
-    output X   ;
-    input  A   ;
+    output wire X   ;
+    input wire  A   ;
 
     // Module supplies
     supply1  VPWR;
